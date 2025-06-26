@@ -1,6 +1,10 @@
 header {
   width: 100%;
   padding: 0 6%;
+  background-color: red;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #navbar {
@@ -20,7 +24,7 @@ header {
   gap: 48px;
 }
 
-.desktop_menu > a {
+a {
   text-decoration: none;
   font-weight: 600px;
 }
@@ -51,7 +55,7 @@ header {
     gap: 5px;
   }
 
-   #mobile_navlist a {
+   a {
       text-decoration: none;
       color: #000;
    }
