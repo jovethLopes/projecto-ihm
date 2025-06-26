@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   gap: 30px;
   max-width: 100%;
-  margin: auto;
+  margin: 0;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
@@ -44,7 +44,7 @@ form {
   flex-direction: column;
 }
 .field {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 label {
@@ -79,4 +79,12 @@ button {
 
 button:hover {
   background-color: #254c99;
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 }
