@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eaf4ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estrutura geral */
+.secao-principal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+/* Painel de Perguntas */
+.painel-perguntas {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 60, 140, 0.1);
+}
+
+.painel-perguntas h2 {
+  color: #004080;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pergunta {
+  margin-bottom: 20px;
+}
+
+.pergunta strong {
+  color: #003366;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pergunta p {
+  color: #444;
+  font-size: 14px;
+}
+
+/* Formulário */
+.formulario-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 60, 140, 0.1);
+}
+
+.formulario-container h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #003366;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cce0ff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botao-enviar {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 30px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+  background-color: #005fcc;
+}
+
+.mensagem-sucesso {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .secao-principal {
+    flex-direction: column;
+  }
+}
+

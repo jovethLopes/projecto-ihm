@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apoie a Biblioteca Despadronizado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="formApoio.css" />
+</head>
+<body>
+  <div class="secao-principal">
+    
+    <!-- Painel Esquerdo - Perguntas Frequentes -->
+    <div class="painel-perguntas">
+      <h2>Como Você Pode Apoiar?</h2>
+
+      <div class="pergunta">
+        <strong>Que tipo de apoio posso oferecer?</strong>
+        <p>Você pode doar livros, contribuir financeiramente ou oferecer serviços voluntários.</p>
+      </div>
+
+      <div class="pergunta">
+        <strong>Preciso preencher todos os campos?</strong>
+        <p>Apenas os marcados como obrigatórios. Mas quanto mais informações, melhor podemos direcionar seu apoio.</p>
+      </div>
+
+      <div class="pergunta">
+        <strong>Como saberei se o apoio foi aceite?</strong>
+        <p>Entraremos em contato com você por e-mail após o envio.</p>
+      </div>
+
+      <div class="pergunta">
+        <strong>Posso receber um comprovativo da minha doação?</strong>
+        <p>Sim! Emitimos um comprovativo digital de cada apoio realizado, enviado diretamente para o seu e-mail.</p>
+      </div>
+    </div>
+
+    <!-- Formulário de Apoio -->
+    <div class="formulario-container">
+      <h2>Formulário de Apoio</h2>
+      <form id="formularioApoio">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tipoApoio">Tipo de Apoio:</label>
+        <select id="tipoApoio" name="tipoApoio" required>
+          <option value="">Selecione</option>
+          <option value="livros">Doação de Livros</option>
+          <option value="financeiro">Doação em Dinheiro</option>
+          <option value="voluntario">Voluntariado</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="valorEstimado">Valor Estimado ou Tipo de Bem (Opcional):</label>
+        <input type="text" id="valorEstimado" name="valorEstimado" placeholder="Ex: 10.000kz ou 5 livros" />
+
+        <label for="descricao">Descrição do Apoio:</label>
+        <textarea id="descricao" name="descricao" rows="4" placeholder="Explique como deseja apoiar..." required></textarea>
+
+        <label for="observacoes">Observações Adicionais:</label>
+        <textarea id="observacoes" name="observacoes" rows="3" placeholder="Ex: formas de entrega, horários disponíveis..."></textarea>
+
+        <button type="submit" class="botao-enviar">Enviar Apoio</button>
+      </form>
+
+      <div id="mensagem" class="mensagem-sucesso" style="display: none;">
+        Obrigado por apoiar nossa biblioteca 💙!
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const formulario = document.getElementById("formularioApoio");
+    const mensagem = document.getElementById("mensagem");
+
+    formulario.addEventListener("submit", function (e) {
+      e.preventDefault();
+      mensagem.style.display = "block";
+      formulario.reset();
+      setTimeout(() => {
+        mensagem.style.display = "none";
+      }, 4000);
+    });
+  </script>
+</body>
+</html>
+
