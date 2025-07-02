@@ -7,6 +7,7 @@
         background-image: url(../imagens/imagem-apresentaçaão.jpg);
         background-position: center;
         background-size: cover;
+        border-bottom-right-radius: 40px;
         color: var(--cor3);
         text-align: center;
         height: 500px;
@@ -15,7 +16,7 @@
       
       .apresentacao h1 {
         width: 65%;
-        font-size: 31px;
+        font-size: 24px;
         font-weight: bold;
         margin: auto;
         padding: 20px 0;
@@ -62,9 +63,8 @@
          /* Estilização da section quem somos */
       .quem-somos {
         background-color: var(--cor5);
-        border-bottom-right-radius: 100px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
-        margin: 20px auto;
+        border-top-right-radius: 40px;
+        margin-top: 20px;
         padding: 20px;
         text-align: justify;
       }
@@ -74,9 +74,8 @@
       }
       
       #quem-somos-p {
-        width: 94%;
+        width: 100%;
         color: #726b6b;
-        text-indent: 20px;
         line-height: 1.5rem;
       }
       
@@ -109,6 +108,8 @@
       
       #quem-somos-caracteristicas p {
         padding: 2rem 0;
+        width: 100%;
+        font-size: 13.5px;
       }
       
           /* Estilização da section existensia */
@@ -118,11 +119,37 @@
         justify-content: center;
         gap: 2.5rem;
         background-color: var(--cor5);
-        border-top-right-radius: 100px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
         padding: 50px;
         text-align: center;
       }
+
+          /* Estilização da section acessar catálogo */
+        
+     .acessar-catalogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--cor1);
+        color: var(--cor3);
+        margin: 20px auto;
+        padding: 10%;
+     }
+
+     #catalogo {
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #00000048;
+        border: 1px solid var(--cor4);
+        border-radius: 10px;
+        color: var(--cor3);
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+        width: 250px;
+     }
       
           /* Estilização da section nossos serviços */
       .nossos-servicos::before {
@@ -160,6 +187,10 @@
       @media screen and (min-width: 768px){
       
             /* Estilização da section apresentação */
+
+        .apresentacao{
+            border-bottom-right-radius: 100px;
+        }
         .apresentacao h1 {
           font-size: 41px;
         }
@@ -198,6 +229,11 @@
         }
       
         /* Estilização da section quem somos */
+
+        .quem-somos {
+            border-top-right-radius: 100px;
+        }
+
         .quem-somos h2 {
           font-size: 1.8em;
           margin-bottom: 10px;
@@ -219,6 +255,7 @@
       
         #quem-somos-caracteristicas p {
           padding: 2.8rem;
+          word-spacing: 0;
         }
       
             /* Estilização da section existensia */
