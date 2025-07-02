@@ -181,6 +181,11 @@
         color: #726b6b;
         line-height: 2rem;
       }
+
+        /* Estilização da section nossos serviços */
+     .feedback {
+        text-align: center;
+     }
       
       
               /* -------------------- ESTILIZAÇÃO DO MAIN/CORPO PARA TABLET E IPAD -------------------- */
