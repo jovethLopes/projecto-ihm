@@ -1,0 +1,237 @@
+
+
+        /* -------------------- ESTILIZAÇÃO DO MAIN/CORPO PARA MOBILE OU TELEFONE  -------------------- */
+
+    /* Estilização da section apresentação */
+    .apresentacao {
+        background-image: url(../imagens/imagem-apresentaçaão.jpg);
+        background-position: center;
+        background-size: cover;
+        color: var(--cor3);
+        text-align: center;
+        height: 500px;
+        object-fit: cover;
+      }
+      
+      .apresentacao h1 {
+        width: 65%;
+        font-size: 31px;
+        font-weight: bold;
+        margin: auto;
+        padding: 20px 0;
+        text-shadow: #000 3px 2px 3px;
+      }
+      
+      .botoes{
+        padding: 20px 0;
+      }
+      
+      .botoes a {
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #00000048;
+        margin: 10px auto;
+        padding: 20px;
+        text-decoration: none;
+      }
+      
+      #contacto {
+        background-color: var(--cor1);
+        border: 1px solid var(--cor1);
+        color: var(--cor3);
+      }
+      
+      #contacto:hover {
+       background-color: var(--cor4);
+       border: 1px solid var(--cor4);
+       transform: translate(0, .22rem);
+       transition: .25s;
+      }
+      
+      #apoio {
+        border: 1px solid var(--cor3);
+        color: var(--cor3);
+      }
+      
+      #apoio:hover {
+        background-color: #dddddd50;
+        transform: translate(0, .22rem);
+        transition: .25s;
+      }
+      
+         /* Estilização da section quem somos */
+      .quem-somos {
+        background-color: var(--cor5);
+        border-bottom-right-radius: 100px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
+        margin: 20px auto;
+        padding: 20px;
+        text-align: justify;
+      }
+      
+      .quem-somos h2 {
+        margin-bottom: 20px;
+      }
+      
+      #quem-somos-p {
+        width: 94%;
+        color: #726b6b;
+        text-indent: 20px;
+        line-height: 1.5rem;
+      }
+      
+      #btn-sobre-nos  {
+        margin: 30px 0;
+      }
+      
+      #btn-sobre-nos a {
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid var(--cor4);
+        box-shadow: 2px 2px 5px #00000048;
+        color: var(--cor1);
+        padding: 15px 0;
+        text-align: center;
+        text-decoration: none;
+        width: 190px;
+      }
+      
+      #btn-sobre-nos:hover a {
+        background-color: var(--cor4);
+        color: var(--cor3);
+        transform: translate(0, .22rem);
+        transition: .25s;
+      }
+      
+      #quem-somos-caracteristicas {
+        margin: 30px 0;
+      }
+      
+      #quem-somos-caracteristicas p {
+        padding: 2rem 0;
+      }
+      
+          /* Estilização da section existensia */
+      .existensia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+        background-color: var(--cor5);
+        border-top-right-radius: 100px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.459);
+        padding: 50px;
+        text-align: center;
+      }
+      
+          /* Estilização da section nossos serviços */
+      .nossos-servicos::before {
+        content: "";
+        width: 81%;
+        height: .1rem;
+        background: linear-gradient(270deg, #007DB7 60%, #0B2442 100%) ;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      
+      .nossos-servicos {
+        margin: 20px auto;
+        padding: 20px;
+      }
+      
+      .nossos-servicos > h1 {
+        margin: 50px 0;
+        text-align: center;
+      }
+      
+      .foto-nossos-servicos,
+      .h2-nossos-servicos {
+        margin: 30px auto;
+      }
+      
+      .nossos-servicos p {
+        color: #726b6b;
+        line-height: 2rem;
+      }
+      
+      
+              /* -------------------- ESTILIZAÇÃO DO MAIN/CORPO PARA TABLET E IPAD -------------------- */
+      @media screen and (min-width: 768px){
+      
+            /* Estilização da section apresentação */
+        .apresentacao h1 {
+          font-size: 41px;
+        }
+      
+        .botoes {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 20px;
+        }
+      
+            /* Estilização da section existensia */
+        .existensia {
+          display: grid;
+          grid-template-columns: 12rem 12rem;
+          gap: 5rem;
+        }
+      
+         /* Estilização da section nossos serviços */
+        .img-nossos-servicos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2.5rem;
+        }
+      
+      }
+      
+      
+             /* -------------------- ESTILIZAÇÃO DO MAIN/CORPO PARA DESCKTOP OU COMPUTADOR  -------------------- */
+      @media screen and (min-width: 998px){
+      
+           /* Estilização da section apresentação */
+        .apresentacao h1 {
+          font-size: 48px;
+        }
+      
+        /* Estilização da section quem somos */
+        .quem-somos h2 {
+          font-size: 1.8em;
+          margin-bottom: 10px;
+        }
+      
+        .quem-somos-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        #quem-somos-p {
+          width: 50%;
+        }
+      
+        #quem-somos-caracteristicas {
+          margin: 0;
+        }
+      
+        #quem-somos-caracteristicas p {
+          padding: 2.8rem;
+        }
+      
+            /* Estilização da section existensia */
+        .existensia {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5rem;
+        }
+      
+          /* Estilização da section nossos serviços */
+        .img-nossos-servicos {
+          gap: 5rem;
+        }
+        
+      }
