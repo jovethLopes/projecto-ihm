@@ -150,6 +150,14 @@
         padding: 20px;
         width: 250px;
      }
+
+     #catalogo:hover {
+      background-color: var(--cor4);
+      border: 1px solid var(--cor4);
+      transform: translate(0, .22rem);
+      transition: .25s;
+     }
+     
       
           /* Estilização da section nossos serviços */
       .nossos-servicos::before {
@@ -182,9 +190,47 @@
         line-height: 2rem;
       }
 
-        /* Estilização da section nossos serviços */
+        /* Estilização da section feedback */
      .feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--cor5);
         text-align: center;
+        margin: auto;
+        padding: 20px;
+     }
+
+     .feedback-principal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+     }
+
+     .feedback-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.596);
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+     }
+
+     .feedback h2 {
+      display: block;
+      margin-bottom: 20px;
+     }
+
+     .feedback-p {
+      color: #726b6b;
      }
       
       
@@ -275,5 +321,14 @@
         .img-nossos-servicos {
           gap: 5rem;
         }
-        
-      }
+
+            /* Estilização da section feedback */
+        .feedback-principal {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .feedback h2 {
+          margin-bottom: 20px;
+        }       
+ }
